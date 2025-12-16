@@ -1,56 +1,339 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/fission-run/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fission Run | Практики применения ИИ</title>
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMjU2IDQwTDQwIDQ3MmgyMTZsMjAwLTMyMEwyNTYgNDB6IiBmaWxsPSIjNjZmY2YxIiBvcGFjaXR5PSIwLjIiLz48cGF0aCBkPSJNMjU2IDQwTDQwIDQ3MmgyMTZWMjE2TDI1NiA0MHoiIGZpbGw9IiM2NmZjZjEiLz48L3N2Zz4=">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/fission-run/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/fission-run/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/fission-run/assets/styles-C9Dyn8H1.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="container header__container">
+    <a href="#" class="header__logo">
+      Fission<span class="text-accent">Run</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+        <li class="header__item"><a href="#platform" class="header__link">Платформа</a></li>
+        <li class="header__item"><a href="#innovation" class="header__link">Инновации</a></li>
+        <li class="header__item"><a href="#blog" class="header__link">Практики</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary">Связаться</a>
+      <button class="header__burger" aria-label="Открыть меню">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__list">
+      <li><a href="#" class="mobile-menu__link">Главная</a></li>
+      <li><a href="#platform" class="mobile-menu__link">Платформа</a></li>
+      <li><a href="#innovation" class="mobile-menu__link">Инновации</a></li>
+      <li><a href="#blog" class="mobile-menu__link">Практики</a></li>
+      <li><a href="#contact" class="mobile-menu__link text-accent">Связаться</a></li>
+    </ul>
   </div>
 </header>
 
-
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__container">
+        <div class="hero__content">
+            <span class="badge">Платформа года 2025</span>
+            <h1 class="hero__title">
+                AI-инструменты <br>
+                <span class="text-accent">для реальных задач</span>
+            </h1>
+            <p class="hero__desc">
+                Переосмыслите подход к развитию. Инновационная технология, которая позволяет построить карьеру и создать
+                стратегию роста уже сегодня.
+            </p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#platform" class="btn btn--outline">Узнать детали</a>
+            </div>
+
+            <div class="hero__stats">
+                <div class="stat-item">
+                    <span class="stat-num">2 мин</span>
+                    <span class="stat-label">На старт</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">EU</span>
+                    <span class="stat-label">Доступ открыт</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section platform" id="platform">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">Технология нового <span class="text-accent">поколения</span></h2>
+            <p class="section__subtitle">Легко разобраться без опыта. Мы убрали всё лишнее, оставив только суть.</p>
+        </div>
+
+        <div class="platform__grid">
+
+            <div class="platform__card platform__card--dark">
+                <i data-lucide="cpu" class="card-icon"></i>
+                <h3>Интеллектуальное ядро</h3>
+                <p>Алгоритмы анализируют ваши задачи и предлагают оптимальные пути решения в реальном времени.</p>
+            </div>
+
+            <div class="platform__card platform__card--accent">
+                <i data-lucide="zap" class="card-icon"></i>
+                <h3>Быстрый старт</h3>
+                <p>Подключение занимает 2 минуты. Интуитивный интерфейс, понятный каждому пользователю.</p>
+            </div>
+
+            <div class="platform__card platform__card--image">
+                <div class="ui-mockup">
+                    <div class="ui-line"></div>
+                    <div class="ui-line ui-line--short"></div>
+                    <div class="ui-circle"></div>
+                </div>
+                <h3>Визуализация данных</h3>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section innovation" id="innovation">
+    <div class="container">
+        <div class="innovation__wrapper">
+            <div class="innovation__info">
+                <h2 class="section__title">Решения, которые <br>меняют правила</h2>
+                <p class="section__desc">
+                    Воплотите мечты в реальность с помощью передовой цифровой инфраструктуры.
+                    Это не просто инструменты, это ваша стратегия роста на базе инноваций.
+                </p>
+                <ul class="check-list">
+                    <li><i data-lucide="check-circle"></i> Проверенный партнер в ЕС</li>
+                    <li><i data-lucide="check-circle"></i> Методологии, доказавшие эффективность</li>
+                    <li><i data-lucide="check-circle"></i> Экспертная поддержка 24/7</li>
+                </ul>
+            </div>
+            <div class="innovation__grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><i data-lucide="bar-chart-2"></i></div>
+                    <h4>Аналитика</h4>
+                    <p>Глубокое понимание процессов.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                    <h4>Безопасность</h4>
+                    <p>Защита данных уровня Enterprise.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i data-lucide="globe"></i></div>
+                    <h4>Масштаб</h4>
+                    <p>Работает в любой точке мира.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i data-lucide="layers"></i></div>
+                    <h4>Интеграция</h4>
+                    <p>Бесшовная работа сервисов.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section practices" id="blog">
+    <div class="container">
+        <h2 class="section__title text-center">Практики применения</h2>
+
+        <div class="practices__list">
+            <article class="practice-card">
+                <div class="practice-card__date">01</div>
+                <div class="practice-card__content">
+                    <h3>Как AI меняет рынок труда в Англии?</h3>
+                    <p>Разбор реальных кейсов и стратегий адаптации.</p>
+                    <a href="#contact" class="link-arrow">Читать <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="practice-card">
+                <div class="practice-card__date">02</div>
+                <div class="practice-card__content">
+                    <h3>Пассивный доход с помощью нейросетей</h3>
+                    <p>Мифы и реальность. Пошаговый путь, понятный каждому.</p>
+                    <a href="#contact" class="link-arrow">Читать <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="practice-card">
+                <div class="practice-card__date">03</div>
+                <div class="practice-card__content">
+                    <h3>Автоматизация рутины за 1 вечер</h3>
+                    <p>Инструменты, которые освободят до 20 часов в неделю.</p>
+                    <a href="#contact" class="link-arrow">Читать <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="contact__wrapper">
+            <div class="contact__text">
+                <h2 class="section__title">Готовы начать?</h2>
+                <p>Заполните форму, чтобы получить доступ к платформе. Наш менеджер свяжется с вами для бесплатной
+                    консультации.</p>
+
+                <div class="contact__info-block">
+                    <p class="text-muted">Email для связи:</p>
+                    <a href="mailto:hello@fission-run.blog" class="contact__link-large">hello@fission-run.blog</a>
+                </div>
+            </div>
+
+            <div class="form-container-wrapper">
+                <form class="contact__form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Иван Петров" required>
+                        <span class="error-msg">Введите имя</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                        <span class="error-msg">Введите корректный email</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+44 20 7123 4567" required>
+                        <span class="error-msg">Только цифры (минимум 10)</span>
+                    </div>
+
+                    <div class="form-group captcha-group">
+                        <label for="captcha">Сколько будет <span id="captchaQuestion"></span>?</label>
+                        <input type="number" id="captcha" required>
+                        <span class="error-msg">Неверный ответ</span>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="policy" required>
+                        <label for="policy">Я согласен с <a href="./personal-data-policy.html">Политикой обработки
+                                данных</a></label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <span class="btn-text">Получить доступ</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                </form>
+                <div class="form-success" style="display: none;">
+                    <div class="success-icon">
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                    <h3>Заявка отправлена!</h3>
+                    <p>Мы свяжемся с вами в ближайшее время.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="#" class="footer__logo">
+          Fission<span class="text-accent">Run</span>
+        </a>
+        <p class="footer__desc">
+          Технологии, которые работают на вас. Экспертная поддержка на всех этапах внедрения искусственного интеллекта.
+        </p>
+        <div class="footer__copyright">
+          &copy; 2025 Fission Run. Все права защищены.
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">Главная</a></li>
+          <li><a href="#platform" class="footer__link">О платформе</a></li>
+          <li><a href="#innovation" class="footer__link">Инновации</a></li>
+          <li><a href="#blog" class="footer__link">Блог</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Юридическая информация</h3>
+        <ul class="footer__list">
+          <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+          <li><a href="cookies.html" class="footer__link">Cookie Policy</a></li>
+          <li><a href="terms.html" class="footer__link">Terms of Use</a></li>
+          <li><a href="return.html" class="footer__link">Return Policy</a></li>
+          <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+          <li><a href="personal-data-policy.html" class="footer__link">Personal Data Policy</a></li>
+        </ul>
+      </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Контакты</h3>
+      <ul class="footer__contacts">
+        <li>
+          <i data-lucide="map-pin" class="footer__icon"></i>
+          <span>15 Oxford Street, London, W1D 1AR, UK</span>
+        </li>
+        <li>
+          <i data-lucide="phone" class="footer__icon"></i>
+          <a href="tel:+442079460888" class="footer__link">+44 20 7946 0888</a>
+        </li>
+        <li>
+          <i data-lucide="mail" class="footer__icon"></i>
+          <a href="mailto:hello@fission-run.blog" class="footer__link">hello@fission-run.blog</a>
+        </li>
+      </ul>
+    </div>
+    </div>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookiePopup">
+      <div class="cookie-content">
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+            политике</a>.</p>
+        <button class="btn btn--primary btn--sm" id="acceptCookie">Принять</button>
+      </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
