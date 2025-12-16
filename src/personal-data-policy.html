@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fission Run | Политика обработки персональных данных</title>
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMjU2IDQwTDQwIDQ3MmgyMTZsMjAwLTMyMEwyNTYgNDB6IiBmaWxsPSIjNjZmY2YxIiBvcGFjaXR5PSIwLjIiLz48cGF0aCBkPSJNMjU2IDQwTDQwIDQ3MmgyMTZWMjE2TDI1NiA0MHoiIGZpbGw9IiM2NmZjZjEiLz48L3N2Zz4=">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+  <body>
+    <load
+      src="./partials/header.html"
+/>
+
+<main>
+  <section class="pages">
+    <div class="container">
+      <h1>Политика обработки персональных данных</h1>
+
+      <h2>1. Общие положения</h2>
+      <p>
+        Настоящая политика определяет порядок и условия обработки персональных
+        данных, предпринимаемые проектом Fission Run (далее — «Оператор»), и
+        устанавливает меры по обеспечению безопасности этих данных.
+        Настоящая Политика применяется ко всей информации, которую
+        Оператор может получить о посетителях веб-сайта Fission Run.
+      </p>
+
+      <h2>2. Основные понятия</h2>
+      <ul>
+        <li><strong>Пользователь</strong> — любой посетитель веб-сайта.</li>
+        <li><strong>Персональные данные</strong> — любая информация, относящаяся к определенному Пользователю.</li>
+        <li><strong>Обработка данных</strong> — любые действия с персональными данными (сбор, хранение, передача и
+          т.д.).</li>
+      </ul>
+
+      <h2>3. Данные, которые мы обрабатываем</h2>
+      <p>Оператор может обрабатывать следующие категории данных:</p>
+      <ul>
+        <li>
+          <strong>Данные, предоставляемые Пользователем:</strong> Имя, адрес электронной почты, номер телефона.
+        </li>
+        <li>
+          <strong>Данные, собираемые автоматически:</strong> IP-адрес, тип браузера, cookies, данные статистики.
+        </li>
+      </ul>
+
+      <h2>4. Цели обработки</h2>
+      <ul>
+        <li>Идентификация Пользователя.</li>
+        <li>Установление обратной связи (ответы на заявки).</li>
+        <li>Улучшение качества работы сайта и аналитика.</li>
+      </ul>
+
+      <h2>5. Безопасность и хранение</h2>
+      <p>
+        Оператор обеспечивает сохранность данных и принимает все меры для их защиты.
+        Персональные данные никогда не будут переданы третьим лицам, за исключением случаев, предусмотренных
+        законодательством.
+      </p>
+
+      <h2>6. Контакты</h2>
+      <p>
+        Пользователь может получить любые разъяснения по вопросам обработки своих данных,
+        обратившись к Оператору по электронной почте:
+        <a href="mailto:hello@fission-run.blog">hello@fission-run.blog</a>.
+      </p>
+    </div>
+  </section>
+</main>
+
+    <load src="./partials/footer.html" />
+    <div class="cookie-popup" id="cookiePopup">
+      <div class="cookie-content">
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+            политике</a>.</p>
+        <button class="btn btn--primary btn--sm" id="acceptCookie">Принять</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script type="module" src="./main.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    </body>
+    
+    </html>
